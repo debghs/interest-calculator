@@ -50,7 +50,7 @@ def interest(principal, days,freq):
   elif days <= 5*365:
     rate = 7.0
   else:
-    rate = 6.9
+    rate = 6.90
   return principal * (1 + rate / (100.0 * freq)) ** ((days * freq) / 365.0) - principal
 
 days = range(1, 3651)
